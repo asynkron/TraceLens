@@ -75,9 +75,13 @@ docker run -p 5001:5001 -p 4317:4317 --env Redis__Server=RedisIp docker.io/roger
 
 TraceView does not share data, all data is stored in your own Redis instance.
 
-**TraceView does however use a remote PlantUML instance for rendering diagrams**. all data required to render the diagrams will be sent to a 3rd party PlantUML Server.
+**TraceView does use PlantUML for rendering diagrams**. 
+All data required to render the diagrams will be sent to the PlantUML Server.
+When using the provided Docker Compose files, a local PlantUML server will be started.
 
-You can change this setting using `--env PlantUml__RemoteUrl = yourplantumlurl`
+Using a standalone docker container, you can configure this setting using this environment variable:
+
+`--env PlantUml__RemoteUrl = yourplantumlurl`
 
 
 ## EULA
