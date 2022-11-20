@@ -1,5 +1,9 @@
 # TraceView
 
+TLDR; What is TraceView?
+1. a logging and tracing visualizer with developer focus instead of SRE/DevOps. see the right data instead of "a lot" of data.
+2. an OpenTelemetry Collector
+
 ![](images/traceview.png)
 
 > **Note**<br>
