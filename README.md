@@ -18,6 +18,9 @@ TraceView is free for personal use.
 
 ### Docker
 
+>**Note**
+>Requires Redis running
+
 #### Linux AMD64 Distro: 
 ```
 docker run -p 5001:5001 -p 4317:4317 docker.io/rogeralsing/traceview:amd64
