@@ -1,8 +1,10 @@
 # TraceView
 
-TLDR; What is TraceView?
-1. an OpenTelemetry logging and tracing visualizer with developer focus instead of SRE/DevOps focus. See the right data instead of "a lot of data".
-2. an OpenTelemetry Collector for ingesting and storing data
+TLDR; What is TraceView?<br>
+TraceView is an OpenTelemetry logging and tracing visualizer with developer focus instead of SRE/DevOps focus.<br>
+_See the right data instead of "a lot of data".<br>_
+
+TraceView is also an OpenTelemetry Collector for ingesting and storing data<br>
 
 ![](images/traceview.png)
 
@@ -20,8 +22,14 @@ TLDR; What is TraceView?
 #### Linux AMD64 Distro: 
 * [docker-compose.yml](amd64/docker-compose.yml)
 
+TraceView UI: http://localhost:5001
+OpenTelemetry (gRPC) Collector: http://localhost:4317
+
 #### Linux ARM64 Distro:
 * [docker-compose.yml](arm64/docker-compose.yml)
+
+TraceView UI: http://localhost:5001
+OpenTelemetry (gRPC) Collector: http://localhost:4317
 
 ### Docker
 
@@ -33,10 +41,16 @@ TLDR; What is TraceView?
 docker run -p 5001:5001 -p 4317:4317 docker.io/rogeralsing/traceview:amd64
 ```
 
+TraceView UI: http://localhost:5001
+OpenTelemetry (gRPC) Collector: http://localhost:4317
+
 #### Linux ARM64 Distro: 
 ```
 docker run -p 5001:5001 -p 4317:4317 docker.io/rogeralsing/traceview:arm64
 ```
+
+TraceView UI: http://localhost:5001
+OpenTelemetry (gRPC) Collector: http://localhost:4317
 
 #### Configuration
 
