@@ -1,10 +1,11 @@
 # TraceView
 
 > **Warning**<br>
-> TraceView is not opensource<br>
-> TraceView is not free for commercial usage
+> TraceView is NOT opensource<br>
+> TraceView is NOT free for commercial usage<br>
+> TraceView IS free for personal use.
 
-TraceView is free for personal use.
+
 
 ## Deployment
 
