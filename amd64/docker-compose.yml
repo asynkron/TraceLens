@@ -5,9 +5,18 @@ services:
     image: redis:latest
     ports:
       - 127.0.0.1:6379:6379
-  
+
   traceview:
     image: docker.io/rogeralsing/traceview:amd64
     ports:
       - 5001:5001
       - 4317:4317
+    environment:
+      - PlantUml__RemoteUrl=http://host.docker.internal:8080
+      - Redis__Server=host.docker.internal
+
+  plantuml-server:
+    image: plantuml/plantuml-server:tomcat
+    container_name: plantuml-server
+    ports:
+      - 8080:8080
