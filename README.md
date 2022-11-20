@@ -57,4 +57,5 @@ docker run -p 5001:5001 -p 4317:4317 --env Redis__Server=RedisIp docker.io/roger
 ## Data Privacy
 
 TraceView does not share data, all data is stored in your own Redis instance.
+
 **TraceView does however use PlantUML for rendering diagrams**. all data required to render the diagrams will be sent to a 3rd party PlantUML Server.
