@@ -10,8 +10,20 @@ TraceView is free for personal use.
 
 ### Docker Compose 
 
-Linux AMD64 Distro: 
+#### Linux AMD64 Distro: 
 [docker-compose.yml](amd64/docker-compose.yml)
 
-Linux ARM64 Distro:
+#### Linux ARM64 Distro:
 [docker-compose.yml](arm64/docker-compose.yml)
+
+### Docker
+
+#### Linux AMD64 Distro: 
+```
+docker run -p 5001:5001 -p 4317:4317 docker.io/rogeralsing/traceview:amd64
+```
+
+#### Linux ARM64 Distro: 
+```
+docker run -p 5001:5001 -p 4317:4317 docker.io/rogeralsing/traceview:arm64
+```
