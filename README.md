@@ -51,7 +51,7 @@ TraceView uses the following configuration block to access Redis
 These settings can be overridden using environment variables like so:
 
 ```bash
-docker run -p 5001:5001 -p 4317:4317 --env Redis__Server=RedisIp docker.io/rogeralsing/traceview
+docker run -p 5001:5001 -p 4317:4317 --env Redis__Server=RedisIp docker.io/rogeralsing/traceview:amd64
 ```
 
 
