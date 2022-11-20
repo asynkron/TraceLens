@@ -1,0 +1,13 @@
+version: '3.7'
+services:
+
+  redis:
+    image: redis:latest
+    ports:
+      - 127.0.0.1:6379:6379
+  
+  traceview:
+    image: docker.io/rogeralsing/traceview:arm64
+    ports:
+      - 5001:5001
+      - 4317:4317
