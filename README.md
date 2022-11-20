@@ -21,15 +21,13 @@ TraceView is also an OpenTelemetry Collector for ingesting and storing data<br>
 
 #### Linux AMD64 Distro: 
 * [docker-compose.yml](amd64/docker-compose.yml)
-
-TraceView UI: http://localhost:5001
-OpenTelemetry (gRPC) Collector: http://localhost:4317
+* TraceView UI: http://localhost:5001
+* OpenTelemetry (gRPC) Collector: http://localhost:4317
 
 #### Linux ARM64 Distro:
 * [docker-compose.yml](arm64/docker-compose.yml)
-
-TraceView UI: http://localhost:5001
-OpenTelemetry (gRPC) Collector: http://localhost:4317
+* TraceView UI: http://localhost:5001
+* OpenTelemetry (gRPC) Collector: http://localhost:4317
 
 ### Docker
 
@@ -41,16 +39,16 @@ OpenTelemetry (gRPC) Collector: http://localhost:4317
 docker run -p 5001:5001 -p 4317:4317 docker.io/rogeralsing/traceview:amd64
 ```
 
-TraceView UI: http://localhost:5001
-OpenTelemetry (gRPC) Collector: http://localhost:4317
+* TraceView UI: http://localhost:5001
+* OpenTelemetry (gRPC) Collector: http://localhost:4317
 
 #### Linux ARM64 Distro: 
 ```
 docker run -p 5001:5001 -p 4317:4317 docker.io/rogeralsing/traceview:arm64
 ```
 
-TraceView UI: http://localhost:5001
-OpenTelemetry (gRPC) Collector: http://localhost:4317
+* TraceView UI: http://localhost:5001
+* OpenTelemetry (gRPC) Collector: http://localhost:4317
 
 #### Configuration
 
