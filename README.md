@@ -4,7 +4,7 @@
 
 > **Note**<br>
 > TraceView is **NOT** opensource<br>
-> TraceView is **NOT** free for commercial usage<br>, for commercial usage contact info@asynkron.se
+> TraceView is **NOT** free for commercial usage, for commercial usage contact info@asynkron.se<br>
 > TraceView **IS** free for personal use.
 
 TLDR; What is TraceView?<br>
