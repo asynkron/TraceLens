@@ -1,9 +1,9 @@
 # TraceView
 
 > **Note**<br>
-> TraceView is NOT opensource<br>
-> TraceView is NOT free for commercial usage<br>
-> TraceView IS free for personal use.
+> TraceView is **NOT** opensource<br>
+> TraceView is **NOT** free for commercial usage<br>
+> TraceView **IS** free for personal use.
 
 
 
