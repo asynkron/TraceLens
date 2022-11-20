@@ -1,11 +1,5 @@
 # TraceView
 
-TLDR; What is TraceView?<br>
-TraceView is an OpenTelemetry logging and tracing visualizer with developer focus instead of SRE/DevOps focus.<br>
-_See the right data instead of "a lot of data".<br>_
-
-TraceView is also an OpenTelemetry Collector for ingesting and storing data<br>
-
 ![](images/traceview.png)
 
 > **Note**<br>
@@ -13,6 +7,11 @@ TraceView is also an OpenTelemetry Collector for ingesting and storing data<br>
 > TraceView is **NOT** free for commercial usage<br>
 > TraceView **IS** free for personal use.
 
+TLDR; What is TraceView?<br>
+TraceView is an OpenTelemetry logging and tracing visualizer with developer focus instead of SRE/DevOps focus.<br>
+_See the right data instead of "a lot of data".<br>_
+
+TraceView is also an OpenTelemetry Collector for ingesting and storing data<br>
 
 
 ## Deployment
