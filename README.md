@@ -19,8 +19,8 @@
 
 ### Docker
 
->**Note**
->Requires Redis running
+>**Note**<br>
+>Requires access to Redis
 
 #### Linux AMD64 Distro: 
 ```
@@ -31,3 +31,23 @@ docker run -p 5001:5001 -p 4317:4317 docker.io/rogeralsing/traceview:amd64
 ```
 docker run -p 5001:5001 -p 4317:4317 docker.io/rogeralsing/traceview:arm64
 ```
+
+#### Configuration
+
+TraceView uses the following configuration block to access Redis
+
+```json
+{
+    "Redis": {
+    "Server": "host.docker.internal",
+    "Port": 6379,
+    "Ssl": false,
+    "CertificatePath": "",
+    "UseCaCertificate": false
+  }
+}
+```
+
+These settings can be overridden using environment variables like so:
+
+`docker run -p 5001:5001 -p 4317:4317 --env Redis__Server=RedisIp docker.io/rogeralsing/traceview
