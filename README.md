@@ -37,14 +37,12 @@ docker run -p 5001:5001 -p 4317:4317 docker.io/rogeralsing/traceview:arm64
 TraceView uses the following configuration block to access Redis
 
 ```json
-{
-    "Redis": {
+"Redis": {
     "Server": "host.docker.internal",
     "Port": 6379,
     "Ssl": false,
     "CertificatePath": "",
     "UseCaCertificate": false
-  }
 }
 ```
 
