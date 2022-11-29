@@ -1,6 +1,6 @@
 # TraceView
 
-![](images/traceview.png)
+![](images/intro.png)
 
 ## Terms of Use
 
