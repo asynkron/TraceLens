@@ -2,10 +2,12 @@
 
 ![](images/traceview.png)
 
-> **Note**<br>
-> TraceView is **NOT** opensource<br>
-> TraceView is **NOT** free for commercial usage, for commercial usage contact info@asynkron.se<br>
-> TraceView **IS** free for personal use.
+## Terms of Use
+
+**During beta, TraceView is free to use for everyone.**
+
+**After beta, TraceView will be free for personal use and OSS projects.**
+A subscription model will be available for commercial use after beta. details are undecided yet.
 
 TLDR; What is TraceView?<br>
 TraceView is an OpenTelemetry logging and tracing visualizer with developer focus instead of SRE/DevOps focus.<br>
