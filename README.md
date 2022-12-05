@@ -4,17 +4,13 @@
 
 ## Terms of Use
 
-**During beta, TraceView is free to use for everyone.**
+During beta, TraceView is free to use for everyone.
 
-**After beta, TraceView will be free for personal use and OSS projects.**
-A subscription model will be available for commercial use after beta. details are undecided yet.
+After beta, TraceView will be free for personal use and OSS projects. A subscription model will be available for commercial use after beta. details are undecided yet.
 
-TLDR; What is TraceView?<br>
-TraceView is an OpenTelemetry logging and tracing visualizer with developer focus instead of SRE/DevOps focus.<br>
-_See the right data instead of "a lot of data".<br>_
+Summary:
 
-TraceView is also an OpenTelemetry Collector for ingesting and storing data<br>
-
+TraceView is an OpenTelemetry logging and tracing visualizer that focuses on providing developers with relevant data, rather than overwhelming them with a large quantity of information. It also acts as an OpenTelemetry Collector for ingesting and storing data.
 
 ## Deployment
 
