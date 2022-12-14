@@ -1,16 +1,16 @@
-# TraceView
+# TraceLens
 
 ![](images/intro2.png)
 
 ## Terms of Use
 
-During beta, TraceView is free to use for everyone.
+During beta, TraceLens is free to use for everyone.
 
-After beta, TraceView will be free for personal use and OSS projects. A subscription model will be available for commercial use after beta. details are undecided yet.
+After beta, TraceLens will be free for personal use and OSS projects. A subscription model will be available for commercial use after beta. details are undecided yet.
 
 Summary:
 
-TraceView is an OpenTelemetry logging and tracing visualizer that focuses on providing developers with relevant data, rather than overwhelming them with a large quantity of information. It also acts as an OpenTelemetry Collector for ingesting and storing data.
+TraceLens is an OpenTelemetry logging and tracing visualizer that focuses on providing developers with relevant data, rather than overwhelming them with a large quantity of information. It also acts as an OpenTelemetry Collector for ingesting and storing data.
 
 ## Deployment
 
@@ -18,12 +18,12 @@ TraceView is an OpenTelemetry logging and tracing visualizer that focuses on pro
 
 #### Linux AMD64 Distro: 
 * [docker-compose.yml](amd64/docker-compose.yml)
-* TraceView UI: http://localhost:5001
+* TraceLens UI: http://localhost:5001
 * OpenTelemetry (gRPC) Collector: http://localhost:4317
 
 #### Linux ARM64 Distro:
 * [docker-compose.yml](arm64/docker-compose.yml)
-* TraceView UI: http://localhost:5001
+* TraceLens UI: http://localhost:5001
 * OpenTelemetry (gRPC) Collector: http://localhost:4317
 
 ### Docker
@@ -33,23 +33,23 @@ TraceView is an OpenTelemetry logging and tracing visualizer that focuses on pro
 
 #### Linux AMD64 Distro: 
 ```
-docker run -p 5001:5001 -p 4317:4317 docker.io/rogeralsing/traceview:amd64
+docker run -p 5001:5001 -p 4317:4317 docker.io/rogeralsing/tracelens:amd64
 ```
 
-* TraceView UI: http://localhost:5001
+* TraceLens UI: http://localhost:5001
 * OpenTelemetry (gRPC) Collector: http://localhost:4317
 
 #### Linux ARM64 Distro: 
 ```
-docker run -p 5001:5001 -p 4317:4317 docker.io/rogeralsing/traceview:arm64
+docker run -p 5001:5001 -p 4317:4317 docker.io/rogeralsing/tracelens:arm64
 ```
 
-* TraceView UI: http://localhost:5001
+* TraceLens UI: http://localhost:5001
 * OpenTelemetry (gRPC) Collector: http://localhost:4317
 
 #### Configuration
 
-TraceView uses the following configuration block to access Redis
+TraceLens uses the following configuration block to access Redis
 
 ```json
 "Redis": {
@@ -64,14 +64,14 @@ TraceView uses the following configuration block to access Redis
 These settings can be overridden using environment variables like so:
 
 ```bash
-docker run -p 5001:5001 -p 4317:4317 --env Redis__Server=RedisIp docker.io/rogeralsing/traceview:amd64
+docker run -p 5001:5001 -p 4317:4317 --env Redis__Server=RedisIp docker.io/rogeralsing/tracelens:amd64
 ```
 
 
 
 ## Data Privacy
 
-TraceView is committed to protecting the privacy of our users. We do not share any data collected through our platform. All data is stored in your own Redis instance, ensuring that you maintain control over your information.
+TraceLens is committed to protecting the privacy of our users. We do not share any data collected through our platform. All data is stored in your own Redis instance, ensuring that you maintain control over your information.
 
 In order to render diagrams, we utilize PlantUML. When using our provided Docker Compose files, a local PlantUML server will be started and all necessary data will be sent to this server for rendering. This ensures that your data remains securely within your own environment.
 
@@ -82,7 +82,7 @@ Using a standalone docker container, you can configure this setting using this e
 
 ## EULA
 
-TRACEVIEW IS IN EARLY ALPHA. IT IS NOT YET READY FOR PRODUCTION USE.
+tracelens IS IN EARLY ALPHA. IT IS NOT YET READY FOR PRODUCTION USE.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
