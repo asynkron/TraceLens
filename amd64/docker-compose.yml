@@ -7,7 +7,7 @@ services:
       - 127.0.0.1:6379:6379
 
   traceview:
-    image: docker.io/rogeralsing/traceview:amd64
+    image: docker.io/rogeralsing/tracelens:amd64
     ports:
       - 5001:5001
       - 4317:4317
