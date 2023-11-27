@@ -15,33 +15,20 @@ TraceLens is an OpenTelemetry logging and tracing visualizer that focuses on pro
 ## Deployment
 
 ### Docker Compose 
-
-#### Linux AMD64 Distro: 
-* [docker-compose.yml](amd64/docker-compose.yml)
-* TraceLens UI: http://localhost:5001
-* OpenTelemetry (gRPC) Collector: http://localhost:4317
-
-#### Linux ARM64 Distro:
-* [docker-compose.yml](arm64/docker-compose.yml)
+:
+* [docker-compose.yml](docker-compose.yml)
 * TraceLens UI: http://localhost:5001
 * OpenTelemetry (gRPC) Collector: http://localhost:4317
 
 ### Docker
 
 >**Note**<br>
->Requires access to Redis
+>Requires access to Postgres, it will use the public free PlantUml server for rendering diagrams
 
-#### Linux AMD64 Distro: 
-```
-docker run -p 5001:5001 -p 4317:4317 docker.io/rogeralsing/tracelens:amd64
-```
+```bash
 
-* TraceLens UI: http://localhost:5001
-* OpenTelemetry (gRPC) Collector: http://localhost:4317
-
-#### Linux ARM64 Distro: 
 ```
-docker run -p 5001:5001 -p 4317:4317 docker.io/rogeralsing/tracelens:arm64
+docker run -p 5001:5001 -p 4317:4317 docker.io/rogeralsing/tracelens:latest
 ```
 
 * TraceLens UI: http://localhost:5001
@@ -49,25 +36,17 @@ docker run -p 5001:5001 -p 4317:4317 docker.io/rogeralsing/tracelens:arm64
 
 #### Configuration
 
-TraceLens uses the following configuration block to access Redis
-
-```json
-"Redis": {
-    "Server": "host.docker.internal",
-    "Port": 6379,
-    "Ssl": false,
-    "CertificatePath": "",
-    "UseCaCertificate": false
-}
-```
-
 These settings can be overridden using environment variables like so:
 
 ```bash
-docker run -p 5001:5001 -p 4317:4317 --env Redis__Server=RedisIp docker.io/rogeralsing/tracelens:amd64
+docker run -p 5001:5001 -p 4317:4317 --env ConnectionStrings__DefaultConnection=PostgresConnStr docker.io/rogeralsing/tracelens:latest
 ```
 
+Example connection string:
 
+```bash
+USER ID=tracelens;PASSWORD=tracelens;HOST=host.docker.internal;PORT=5432;DATABASE=tracelens;POOLING=true;
+```
 
 ## Data Privacy
 
@@ -82,7 +61,7 @@ Using a standalone docker container, you can configure this setting using this e
 
 ## EULA
 
-tracelens IS IN EARLY ALPHA. IT IS NOT YET READY FOR PRODUCTION USE.
+TraceLens IS IN EARLY BETA. IT IS NOT YET READY FOR PRODUCTION USE.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 

@@ -1,0 +1,28 @@
+version: '3.7'
+services:
+  
+  postgres:
+    image: postgres
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: tracelens
+      POSTGRES_USER: tracelens
+      POSTGRES_PASSWORD: tracelens
+
+  plantuml-server:
+    image: plantuml/plantuml-server:tomcat
+    container_name: plantuml-server
+    ports:
+      - 8080:8080
+
+  trace-lens:
+    image: docker.io/rogeralsing/tracelens:latest
+    pull_policy: always
+    ports:
+      - 5001:5001
+      - 4317:4317
+    environment:
+      - PlantUml__RemoteUrl=http://host.docker.internal:8080
+      - ConnectionStrings__DefaultConnection=USER ID=tracelens;PASSWORD=tracelens;HOST=host.docker.internal;PORT=5432;DATABASE=tracelens;POOLING=true;
