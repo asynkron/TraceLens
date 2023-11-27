@@ -26,8 +26,6 @@ TraceLens is an OpenTelemetry logging and tracing visualizer that focuses on pro
 >Requires access to Postgres, it will use the public free PlantUml server for rendering diagrams
 
 ```bash
-
-```
 docker run -p 5001:5001 -p 4317:4317 docker.io/rogeralsing/tracelens:latest
 ```
 
