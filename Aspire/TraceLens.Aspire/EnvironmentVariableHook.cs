@@ -1,7 +1,7 @@
 using Aspire.Hosting.Lifecycle;
 using Microsoft.Extensions.Logging;
 
-namespace Aspire.TraceLens;
+namespace TraceLens.Aspire;
 
 internal class EnvironmentVariableHook : IDistributedApplicationLifecycleHook
 {

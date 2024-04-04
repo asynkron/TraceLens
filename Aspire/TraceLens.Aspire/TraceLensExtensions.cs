@@ -1,7 +1,7 @@
 ﻿using Aspire.Hosting.Lifecycle;
 using JetBrains.Annotations;
 
-namespace Aspire.TraceLens;
+namespace TraceLens.Aspire;
 
 [PublicAPI]
 public static class TraceLensExtensions
