@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aspire.TraceLens", "Aspire.TraceLens.csproj", "{86224012-B754-47CD-BD99-5C095D2B1198}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TraceLens.Aspire", "TraceLens.Aspire.csproj", "{86224012-B754-47CD-BD99-5C095D2B1198}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
