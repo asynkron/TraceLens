@@ -18,14 +18,20 @@
         <RepositoryUrl>https://github.com/asynkron/TraceLens</RepositoryUrl>
         <PackageTags>otel; tracelens; aspire; dashboard; opentelemetry</PackageTags>
         <PackageProjectUrl>https://github.com/asynkron/TraceLens</PackageProjectUrl>
-        <PackageIcon>asynkron.png</PackageIcon>
+
     </PropertyGroup>
-
-
+    
     <ItemGroup>
       <PackageReference Include="Aspire.Hosting" Version="8.0.0-preview.3.24105.21" />
       <PackageReference Include="JetBrains.Annotations" Version="2023.3.0" />
       <PackageReference Include="Microsoft.Extensions.Logging" Version="9.0.0-preview.2.24128.5" />
+    </ItemGroup>
+    
+    <ItemGroup>
+      <None Remove="asynkron.png" />
+      <Content Include="asynkron.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
     </ItemGroup>
 
 </Project>
