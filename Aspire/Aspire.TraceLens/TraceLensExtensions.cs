@@ -1,8 +1,9 @@
-﻿using Aspire.Hosting;
-using Aspire.Hosting.Lifecycle;
+﻿using Aspire.Hosting.Lifecycle;
+using JetBrains.Annotations;
 
-namespace eShopLite.AppHost;
+namespace Aspire.TraceLens;
 
+[PublicAPI]
 public static class TraceLensExtensions
 {
     public static ContainerResource AddTraceLens(this IDistributedApplicationBuilder distributedApplicationBuilder)

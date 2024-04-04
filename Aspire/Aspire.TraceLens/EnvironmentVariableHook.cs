@@ -1,9 +1,9 @@
 using Aspire.Hosting.Lifecycle;
 using Microsoft.Extensions.Logging;
 
-namespace eShopLite.AppHost;
+namespace Aspire.TraceLens;
 
-public class EnvironmentVariableHook : IDistributedApplicationLifecycleHook
+internal class EnvironmentVariableHook : IDistributedApplicationLifecycleHook
 {
     private readonly ILogger<EnvironmentVariableHook> _logger;
 
