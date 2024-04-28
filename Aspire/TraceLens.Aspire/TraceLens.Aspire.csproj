@@ -25,6 +25,7 @@
       <PackageReference Include="Aspire.Hosting" Version="9.0.0-preview.3.24210.17" />
       <PackageReference Include="JetBrains.Annotations" Version="2023.3.0" />
       <PackageReference Include="Microsoft.Extensions.Logging" Version="9.0.0-preview.3.24172.9" />
+        <PackageReference Include="Aspire.Hosting.PostgreSQL" Version="8.0.0-preview.6.24214.1" />
     </ItemGroup>
     
     <ItemGroup>

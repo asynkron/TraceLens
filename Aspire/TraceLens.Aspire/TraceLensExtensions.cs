@@ -3,6 +3,7 @@ using Aspire.Hosting.ApplicationModel;
 using Aspire.Hosting.Lifecycle;
 using JetBrains.Annotations;
 
+
 namespace TraceLens.Aspire;
 
 [PublicAPI]
@@ -10,7 +11,7 @@ public static class TraceLensExtensions
 {
     public static ContainerResource AddTraceLens(this IDistributedApplicationBuilder distributedApplicationBuilder)
     {
-        var tracelensDb = distributedApplicationBuilder.AddPostgresContainer("tracelenspgsql").AddDatabase("tracelensdb");
+        var tracelensDb = distributedApplicationBuilder.AddPostgres("tracelenspgsql").AddDatabase("tracelensdb");
 
         var plantUml = distributedApplicationBuilder.AddContainer("plantuml", "plantuml/plantuml-server", tag: "tomcat")
             .WithHttpEndpoint(8080, name: "plantuml");
