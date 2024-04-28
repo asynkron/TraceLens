@@ -1,3 +1,4 @@
+using Aspire.Hosting.ApplicationModel;
 using Aspire.Hosting.Lifecycle;
 using Microsoft.Extensions.Logging;
 
@@ -36,7 +37,7 @@ internal class EnvironmentVariableHook : IDistributedApplicationLifecycleHook
             {
                 if (context.EnvironmentVariables.ContainsKey("OTEL_EXPORTER_OTLP_ENDPOINT"))
                     context.EnvironmentVariables.Remove("OTEL_EXPORTER_OTLP_ENDPOINT");
-                context.EnvironmentVariables.Add("OTEL_EXPORTER_OTLP_ENDPOINT", endpoint.UriString);
+                context.EnvironmentVariables.Add("OTEL_EXPORTER_OTLP_ENDPOINT", endpoint.Url);
             }));
         }
 

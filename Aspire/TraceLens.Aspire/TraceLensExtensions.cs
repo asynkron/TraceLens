@@ -1,4 +1,6 @@
-﻿using Aspire.Hosting.Lifecycle;
+﻿using Aspire.Hosting;
+using Aspire.Hosting.ApplicationModel;
+using Aspire.Hosting.Lifecycle;
 using JetBrains.Annotations;
 
 namespace TraceLens.Aspire;
