@@ -11,8 +11,8 @@ public static class TraceLensExtensions
 {
     public static ContainerResource AddTraceLens(
         this IDistributedApplicationBuilder distributedApplicationBuilder, 
-        int? tracelensPort = 5001, 
-        int? plantUmlPort = 8080)
+        int tracelensPort = 5001, 
+        int plantUmlPort = 8080)
     {
         var tracelensDb = distributedApplicationBuilder
             .AddPostgres("tracelenspgsql")
