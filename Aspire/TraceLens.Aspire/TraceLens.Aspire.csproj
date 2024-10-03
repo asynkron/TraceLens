@@ -22,10 +22,10 @@
     </PropertyGroup>
     
     <ItemGroup>
-      <PackageReference Include="Aspire.Hosting" Version="8.0.0-preview.6.24214.1" />
+      <PackageReference Include="Aspire.Hosting" Version="8.2.1" />
       <PackageReference Include="JetBrains.Annotations" Version="2023.3.0" />
       <PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.0" />
-        <PackageReference Include="Aspire.Hosting.PostgreSQL" Version="8.0.0-preview.6.24214.1" />
+        <PackageReference Include="Aspire.Hosting.PostgreSQL" Version="8.2.1" />
     </ItemGroup>
     
     <ItemGroup>
